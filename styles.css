@@ -67,7 +67,11 @@ input {
 
 
 
+
 .response {
+  opacity: 0;
+  transition: all 300ms;
+
   background-color: #fff;
   border:  1px solid #eee;
   box-shadow: 0 0 5px 0 #eee;
