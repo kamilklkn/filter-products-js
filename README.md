@@ -1,6 +1,6 @@
 # Filter products with javascript
 
-Exercise of javascript using the method indexOf of the arrays.
+Exercise of javascript.
 
 
 Author: Andres Parra Garzón
