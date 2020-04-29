@@ -2,6 +2,8 @@
 const $inputSearch = document.getElementById('search')
 const $response = document.getElementById('response')
 const $responseContainer = document.getElementById('responseCards')
+const $searchBtn = document.getElementById('search-btn')
+
 
 let products = [
   {
@@ -63,7 +65,20 @@ const renderProducts = (product) => {
 
 
 $inputSearch.addEventListener('keyup', e => {
-  if(e.target.value) {
+  if(e.target.value.length > 0) {
     searchProduct($inputSearch.value.toLowerCase())
+  } else {
+    $responseContainer.innerHTML = ''
+  }
+})
+
+
+
+$searchBtn.addEventListener('click', e => {
+  console.log(e)
+  if($inputSearch.value.length > 0) {
+    searchProduct($inputSearch.value.toLowerCase())
+  } else {
+    $responseContainer.innerHTML = ''
   }
 })
